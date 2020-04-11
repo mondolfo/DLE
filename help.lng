@@ -1,0 +1,172 @@
+<?php
+
+$help_sections['title']['templates'] ="Šablonai";
+$help_sections['body']['templates'] = <<<HTML
+Šablonai naudojamai lengavm jaunienų pakeitimui. Jūs galite keisti skirtingas šablono vietas. Pavyzdžiui, šablono dalis "Trumpas aprašymas" naudojamas, kad pakeisti aktyvių naujienų išvaizdą, "Pilnas aprašymas", kad pakeisti pilnos naujienos išvaizdą, "?omentarai", kad pakeisti komentarų išvaizdą ir t.t.<br><br>
+Redaguojant šablono dalis Jūs galite naudoti HTML, kad pakeisti skirtingas šablono struktūras ir t.t. Taip pat Jūs turėsite įrašyti kaikuriuos specialius žymėjimus į Jūsų šabloną, kad nustatyti vietą, kur bus rodomas naujienos pavadinimas, autoriaus vardas, data ir t.t. Kiekvienai šablono daliai yra atitinkami specialiūs žymėjimai.<br>
+Kintamųjų reikšmes galima pamatyti šablono redagavimo lange paspaudus ant šablono dalies pavadinimo. Pavyzdžiui <b>{title}</b> išves naujienos pavadinimą, o <b>{author}</b> nuajienos autorių ir t.t.<br><br>
+Jūs galite naudoti keletą skirtingų šablonų.
+HTML;
+
+$help_sections['title']['xfields'] ="Papildomi laukeliai";
+$help_sections['body']['xfields'] = <<<HTML
+Papildomų laukelių prijungimas per Nustatymų meniu &gt; <a href=?mod=xfields&xfieldsaction=configure>Papildomi laukeliai</a>. Ši funkcija patogi rašant naujieną kartu su nuoroda į pirminį šaltinį.<br>
+Pridėti naują laukelį galima paspaudus ant nuorodos "<a href=?mod=xfields&xfieldsaction=configure&xfieldssubaction=edit&xfieldsindex=1.5>Naujas laukelis</a>". Atsidariusiame puslapyje jūs turite įvesti unikalų lauko pavadinimą, lauko aprašymą, ir turinį pagal nutylėjimą. Taip pat jūs turite nurodyti ar laukelį norite naudoti pagal pageidavimą. T.y. jeigu jūs kokiai nors naujienai nenorėsi naudoti papildomo lauko, tai jums užteks palikti laukelį tuščią ir modifikacija nebus įjungiama.<br><br>
+Kad naudoti laukelį puslapyje su naujienomis, jūs turite į šabloną įterpti kintmąjį [xfvalue_X], kur X - lauko reikšmė (pavadinimas, kurį jūs įvedėte kuriant laukelį). Taip pat galima naudoti ryšulius [xfgiven_X]...[/xfgiven_X].<br><br>
+Papildomų laukų darbo pavyzdys:
+<div class="code">
+<b>1)</b>- Pavadinimas: stit<br>
+&nbsp;&nbsp;- Aprašymas: Informacijos šaltinis<br>
+&nbsp;&nbsp;- Reikšmė pagal nutylėjimą: Aš<br>
+&nbsp;&nbsp;- Pagal pageidavimą: Taip<br>
+<b>2)</b>- Pavadinimas: source<br>
+&nbsp;&nbsp;- Aprašymas: Nuoroda į informacijos šaltinį<br>
+&nbsp;&nbsp;- Reikšmė pagal nutylėjimą: http://puslapis.lt/<br>
+&nbsp;&nbsp;- Pagal pageidavimą: Taip<br><br>
+<b>Šablone rašome:</b><br>
+[xfgiven_source]Šaltinis- &lt;a href=[xfvalue_source] target=_blank&gt;[xfvalue_stit]&lt;/a&gt;.[/xfgiven_source]<br>
+[xfnotgiven_source]Šaltinis nenurodytas[/xfnotgiven_source]</div>
+Viso to rezultatas bus sekantis HTML kodas:
+<div class="code">Šaltinis - &lt;a href=http://puslapis.lt/ target=_blank&gt;Aš&lt;/a&gt;.</div>
+Tuo atvėju jei šaltinis bus nenurodytas, tai darbo rezultatas bus toks:
+<div class="code">Šaltinis nenurodytas</div>
+Atminkite, kad lauko pavadinime reikia naudoti tik lotyniškas raides ir skaičius.
+HTML;
+
+$help_sections['title']['xprofile'] ="Papildomai laukeliai vartotojo profilyje";
+$help_sections['body']['xprofile'] = <<<HTML
+Ši funkcija skirta papildomų laukelių pridėjimui į vartotojų profilius, neatsižvelgiant į jau egzistuojančius pagrindinius laukus.<br><br>
+Pridėti naują laukelį galima paspaudus ant nuorodos "Naujas laukelis". Atsidariusiame puslapyje jūs turite įveste lauko unikalų pavadinimą ir lauko aprašymą. Taip pat jūs turite nurodyti ar norite, kad vartotojas galėtų įvesti informaciją registracijos metu, ar yra šitas laukelis labai svarbus užpildymui, taip pat ar vartotojas galės vėliau redaguoti šio lauko informaciją.<br><br>
+Papildomai laukai priėinami peržiūrint vartotojo profilį ir komentarus, Jūs turite į reikiamus šablonus įterpti kodą [xfvalue_X], kur X - lauko reikšmė (pavadinimas, kurį Jjūs įvedėte kuriant lauką). Taip pat galima naudoti ryšulius [xfgiven_X]...[/xfgiven_X].<br><br>
+Papildomų laukų darbo pavyzdys:
+<div class="code">
+&nbsp;&nbsp;- Pavadinimas: Miestas<br>
+&nbsp;&nbsp;- Aprašymas: Miestas<br>
+&nbsp;&nbsp;- Lauko tipas: Viena eilutė<br>
+&nbsp;&nbsp;- Pridėti į registracijos puslapį: Taip<br>
+&nbsp;&nbsp;- Vartotojas gali keisti lauko informaciją: Taip<br>
+&nbsp;&nbsp;- Padaryti lauką asmeniniu: Ne<br><br>
+į šabloną comments.tpl ir userinfo.tpl pridėti<br>
+[xfgiven_city] Miestas: [xfvalue_city] [/xfgiven_city]</div>
+Jeigu vartotojas savo profilyje pridės miestą pavyzdžiui "Vilnius", tai viso to pasekoje HTML kodas bus:
+<div class="code">Miestas: Vilnius</div>
+Atminkite, kad lauko pavadinime reikia naudoti tik lotyniškas raides ir skaičius.
+HTML;
+
+$help_sections['title']['banners'] ="Reklamos valdymas";
+$help_sections['body']['banners'] = <<<HTML
+Šis modulis skirtas, greitam ir patogiam reklamų valdymui. Kad patalpinti norimą puslapyje reklamą, jums pakanka viena kartą pridėta reklamos kodą į šabloną, po kurio galite be problemu keisti ir redaguoti reklamos kodą administaracijos puslapyje, neliečiant šablono failų.<br /><br />
+Po to kai įdėsite reklamą tuomet galite patalpinti jo kodą šablonuose <b>main.tpl</b> arba <b>fullstory.tpl</b>. Jeigu norite, kad reklama būtų rodoma tarp trumpų naujienų, tai kodo nereikia įterpinėti į šablonus, reklma bus automatiškai rodoma tarp trumpų naujienų.
+<br />Veikimo pavyzdys:
+<div class="code">
+&nbsp;&nbsp;- Pavadinimas: header<br>
+&nbsp;&nbsp;- Aprašymas: Viršutinė reklama<br>
+&nbsp;&nbsp;- Įjungti reklamos rodymą: Taip<br>
+&nbsp;&nbsp;- Rodyti tik pagrindiniame puslapyje: Ne<br>
+&nbsp;&nbsp;- Užfiksuoti padėtį: Ne<br>
+&nbsp;&nbsp;- Talpinti tarp naujienų: Ne<br><br>
+Po šito jūs galite į šablonus <b>main.tpl</b> ir <b>fullstory.tpl</b> įterpti reklamos išvedimo kodą: <b>{banner_header}</b><br />
+</div>
+Reklamos pridėjimui galite naudoti tik HTML ir JavaScript.
+HTML;
+
+$help_sections['title']['date'] ="Datos ir laiko formatai";
+$help_sections['body']['date'] = <<<HTML
+Formato eilutėje atpažįstami sekantys simboliai: 
+<ul>
+<li><b>a</b> - "am" arba "pm"</li>
+<li><b>A</b> - "AM" arba "PM"</li>
+<li><b>B</b> - laikas Swatch Internet </li>
+<li><b>d</b> - mėnesio diena (skaičius), 2 skaičiai su priekyje einančiu nuliu, jeigu būtina; t.y. nuo "01" iki "31" </li>
+<li><b>D</b> - savaitės diena, raidinis, 3 raidės; pavyzdžiui, "Pir"</li>
+<li><b>F</b> - mėnesis, raidinis, long; pavyzdžiui, "Sausis"</li>
+<li><b>g</b> - valanda, 12-valandų formatas be einančių nulių; t.y. nuo "1" iki "12"</li>
+<li><b>G</b> - valanda, 24-valandų formatas be einančių nulių; t.y. nuo "0" iki "23"</li>
+<li><b>h</b> - valanda, 12-valandų formatas; t.y. nuo "01" iki "12"</li>
+<li><b>H</b> - valanda, 24-valandų formatas; t.y. nuo "00" iki "23"</li>
+<li><b>i</b> - minutės; t.y. nuo "00" iki "59"</li>
+<li><b>I</b> (i) - "1", jeigu Daylight Savings Time, "0" - priešingu atveju.</li>
+<li><b>j</b> - mėnesio diena (skaičius) be einančių nulių; t.y. nuo "1" iki "31"</li>
+<li><b>l</b> ('L') - savaitės diena, raidinis, long; pavyzdžiui, "Penktadienis" </li>
+<li><b>L</b> - boolean, nurodo ar keliamieji metai; t.y. "0" arba "1"</li> 
+<li><b>m</b> - mėnesis; t.y. nuo "01" iki "12"</li>
+<li><b>M</b> - mėnesis, raidinis, 3 raidės; pavyzdžiui, "Sau" </li>
+<li><b>n</b> - mėnesis be einančių nulių; t.y. nuo "1" iki "12" </li>
+<li><b>O</b> - Laiko skirtumas pagal Grinvičą valandomis; pavyzdžiui, "+0200" </li>
+<li><b>r</b> - RFC 822 datos formatas; Pavyzdžiui, "Tre, 21 Gru 2000 16:01:07 +0200" (įvestas į PHP 4.0.4) </li>
+<li><b>s</b> - sekundės; t.y. nuo "00" iki "59"</li>
+<li><b>S</b> - paprastas angliškas prefiksas mėnesio dienai (skaičiui) , 2 simboliai; t.y. "st", "nd", "rd" arba "th"</li>
+<li><b>t</b> - dienų kiekis šiame mėnesyje; t.y. nuo "28" iki "31" </li>
+<li><b>T</b> - Timezone/Laiko zonos nustatymas šiame serveryje; pavyzdžiui, "EST" arba 
+"MDT" </li>
+<li><b>U</b> - Unix Epoch sekundės (pradedant nuo Sausio 1 1970 00:00:00 GMT) </li>
+<li><b>w</b> - savaitės diena, skaitinis, t.y. nuo "0" (Sekmadienis) iki "6" (Šeštadienis)) </li>
+<li><b>W</b> - ISO-8601 savaitės numeris metuose, savaitės prasideda nuo pirmadienio/Monday 
+(įvesta į PHP 4.1.0) </li>
+<li><b>Y</b> - metai, 4 skaičiai; pavyzdžiui, "1999"</li>
+<li><b>y</b> - metai, 2 skaičiai; pavyzdžiui, "99" </li>
+<li><b>z</b> - metų diena; t.y. nuo "0" iki "365"</li>
+<li><b>Z</b> - laiko juostos pakeitimas sekundėmis (t.y. nuo "-43200" iki "43200"). 
+Laiko juostos pakeitimas pagal UTC visada neigiamas, o juostos į rytus, UTC - visada teigiamas.</li></ul>
+HTML;
+
+$help_sections['title']['social'] ="Prisijungimo per Socialiniu tinklus nustatymai";
+$help_sections['body']['social'] = <<<HTML
+<div class="bg-primary-700" style="padding:10px;">Prisijungimo per Vkontakte nustatymai</div>
+Pirmiausia jums būtina sukurti naują aplikaciją puslapyje <a href="http://vk.com/editapp?act=create" target="_blank">Vkontakte</a>.<br><br>
+Atsidariusioje formoje įveskite aplikacijos pavadinimą ir pasirinkite tipą "WEB - svetainė", adreso kelią nurodykite kaip http://puslapis.lt/index.php?do=auth-social&provider=vk. Baziniu domenu, nurodykite: puslapis.lt
+<br /><br /><div style="text-align:center;"><img src="engine/skins/images/vk1.jpg" /></div>
+<br />Po to, kai nuspausite mygtuką "Įjungti svetainę", jums reikės įvesti patikrinimo kodą, kuri ateis SMS žinute. Jei praeisite patikrą, tai jums turėtų atsidaryti formą su aplikacijos nustatymais:
+<br /><br /><div style="text-align:center;"><img src="engine/skins/images/vk2.jpg" /></div>
+<br />Iš šios formos jums prireiks tokių duomenų, kaip "aplikacijos ID" ir "Saugos raktas", kuriuos jūs turite įvesti savo puslapio administracijos panelėje, socialinių puslapių nustatymuose. Šie laukeliai bus unikalūs jūsų svetainei.
+<br /><br />Po to šablone <b>login.tpl</b> patalpinkite pavyzdinį kodą:
+<div class="code">[vk]&lt;a href="{vk_url}" target="_blank"&gt;Prisijungimas per Vkontakte&lt;/a&gt;[/vk]</div>
+Kur tagai [vk] jūsų tekstas [/vk] atsiranda tekstas įterpts taguose, jei įjungtas šis palaikymas. O tagas {vk_url} išveda URL nuorodą į socialinio tinklo prisijungimą.
+<br><br>
+<div class="bg-primary-700" style="padding:10px;">Prisijungimo per Odnoklassniki nustatymai</div>
+Norint užregistruoti svetainę, kurioje bus leidimas prisijungti per Odnoklassniki, būtina užpildyti <a href="http://www.odnoklassniki.ru/devaccess" target="_blank">formą ir gauti kūrėjo teises</a>. Tada atidarykite skyrių <a href="http://www.odnoklassniki.ru/games" target="_blank">"Žaidimai"</a> ir dešinėje turėtų būti nuoroda <a href="http://www.odnoklassniki.ru/dk?st.cmd=appsInfoMyDevList&st._aid=Apps_Info_MyDev" target="_blank">"Mano įkėlimai"</a>. Po to spauskite ant "pridėti aplikaciją" ir užpildykite formą:<br><br>
+<br /><br /><div style="text-align:center;"><img src="engine/skins/images/odnoklassniki1.jpg" /></div>
+<br />Pildydami formą, būtinai nurodykite paraiškos tipą "External". Laukeliuose "Nuoroda į aplikaciją" ir "Sąrašas leidžiamų redirect_uri" nurodykite kelią http://puslapis.lt/index.php?do=auth-social&provider=od , o taip pat pažymėkite varnele "Įgalinti klientinį OAuth prisijungimą". Po naujos aplikacijos pridėjimo, jums į elektroninį paštą bus atsiųstas laiškas su jums reikiamais nustatymais.
+<br /><br /><div style="text-align:center;"><img src="engine/skins/images/odnoklassniki2.jpg" /></div>
+<br />Iš laiško jums prireiks tokių parametrų, kaip "Applikacijos ID", "Aplikacijos viešasis raktas", "Slaptas aplikacijos raktas", kuriuos jūs turite įvesti savo puslapio administracijos panelėje, socialinių puslapių nustatymuose. Šie laukeliai bus unikalūs jūsų svetainei.
+<br /><br />Po to šablone <b>login.tpl</b> patalpinkite pavyzdinį kodą:
+<div class="code">[odnoklassniki]&lt;a href="{odnoklassniki_url}" target="_blank"&gt;Prisijungimas per Odnoklassniki&lt;/a&gt;[/odnoklassniki]</div>
+Kur tagai [odnoklassniki] jūsų tekstas [/odnoklassniki] atsiranda tekstas įterpts taguose, jei įjungtas šis palaikymas. O tagas {odnoklassniki_url} išveda URL nuorodą į socialinio tinklo prisijungimą.
+<br><br>
+<div class="bg-primary-700" style="padding:10px;">Prisijungti per Facebook</div>
+Pirmiausia jums būtina sukurti naują aplikaciją puslapyje <a href="https://developers.facebook.com/apps" target="_blank">Facebook</a>.<br><br>
+Viršutiniame dešiniajame kampe spustelėkite mygtuką "+ Sukurti naują aplikaciją". Tada įveskite paraiškos pavadinimą:
+<br /><br /><div style="text-align:center;"><img src="engine/skins/images/fc1.jpg" /></div>
+<br />Tada, kaip programos tipą, pasirinkite, kad prisijungti per "Facebook" o platforma WEB.
+<br />Po to išsaugokite ir eikite į programos, esančios submeniu "Produktai", nustatymus. Nustatymuose reikia taisyklingai pridėti OAuth URL adresą , būtent http://puslapis.lt/index.php?do=auth-social&provider=fc . Norėdami aktyvuoti aplikaciją viešai priegai, skirtukyje "aplikacijos patikrinimas" reikia įjungti atitinkimą pasirinktį ir išsaugoti. Norint dirbti toliau, jums reikės parametrų, kuriuos galite rasti šiuose laukuose::
+<br /><br /><div style="text-align:center;"><img src="engine/skins/images/fc3.jpg" /></div>
+<br />kuriuos jūs turite įvesti administracijos panelėje, socialinių puslapių nustatymuose. Šie laukeliai bus unikalūs jūsų svetainei.
+<br /><br />Po to šablone <b>login.tpl</b> patalpinkite pavyzdinį kodą:
+<div class="code">[facebook]&lt;a href="{facebook_url}" target="_blank"&gt;Prisijungimas per Facebook&lt;/a&gt;[/facebook]</div>
+Kur tagai [facebook] jūsų tekstas [/facebook] atsiranda tekstas įterpts taguose, jei įjungtas šis palaikymas. O tagas {facebook_url} išveda URL nuorodą į socialinio tinklo prisijungimą.
+<br><br>
+<div class="bg-primary-700" style="padding:10px;">Prisijungti per Google</div>
+Pirmiausia jums būtina sukurti naują aplikaciją puslapyje <a href="https://code.google.com/apis/console/" target="_blank">Google</a>.Įėję į puslapį, spustelėkite "Sukurti projektą".
+<div style="text-align:center;"><img src="engine/skins/images/google1.jpg" /></div>
+Po formos užpildymo, eikite į biblioteką ir ten spauskite ant Google+ API (atkreipkite dėmesį, kad viršuje turėtų būti jūsų sukurto projekto pavadinimas)
+<br /><br /><div style="text-align:center;"><img src="engine/skins/images/google2.jpg" /></div>
+<br />Įjunkite šį API ir po įjungimo jums pasiūlys užpildyti apskaitos duomenys. Užpildykite formą ir išsaugokite:
+<br /><br /><div style="text-align:center;"><img src="engine/skins/images/google3.jpg" /></div>
+<br />Užpildome formas:
+<br /><br /><div style="text-align:center;"><img src="engine/skins/images/google4.jpg" /></div>
+<br /><br /><div style="text-align:center;"><img src="engine/skins/images/google5.jpg" /></div>
+Nukreipimo adresas yra http://puslapis.lt/index.php?do=auth-social&provider=google
+<br /><br /><div style="text-align:center;"><img src="engine/skins/images/google6.jpg" /></div>
+<br />Dabar skyriuje "Apskaitos duomenys" eikite į skirtuką "domeno nuosavybės patvirtinimas", pridedame jį ir patvirtiname. Po to jums reikės tokių parametrų, kaip "Client ID" ir "Client Secret", kuriuos jūs turite įvesti savo puslapio administracijos panelėje, socialinių puslapių nustatymuose.
+<br /><br />Po to šablone <b>login.tpl</b> patalpinkite pavyzdinį kodą:
+<div class="code">[google]&lt;a href="{google_url}" target="_blank"&gt;Prisijungimas Google&lt;/a&gt;[/google]</div>
+Kur tagai [google] jūsų tekstas [/google] atsiranda tekstas įterpts taguose, jei įjungtas šis palaikymas. O tagas {google_url} išveda URL nuorodą į socialinio tinklo prisijungimą.
+<br><br>
+<div class="bg-primary-700" style="padding:10px;">Taip pat yra ir dar du prijungimo būdai. Tai Mail.Ru ir Yandex</div><br><br>
+<a href="http://api.mail.ru/sites/my/add" target="_blank">Mail.Ru</a>.<br><br>
+<a href="https://oauth.yandex.ru/client/new" target="_blank">Yandex</a>.<br><br>
+<br><br>
+Linkime sėkmės
+HTML;
+
+?>

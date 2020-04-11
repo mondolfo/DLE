@@ -1,0 +1,169 @@
+<?php
+
+$lang = array_merge($lang, array (
+
+// 14.0
+'admin_logs_action_120'		=>	"Atjungė kategoriją, ID:",
+'admin_logs_action_121'		=>	"Pajungė kategoriją , ID:",
+// 14.0
+
+// 13.3
+'admin_logs_action_119'		=>	"Pakeitė įskiepių rūšiavimą",
+// 13.3
+
+// 13.1
+'admin_logs_action_118'		=>	"Redaguojamas naudotojo filtre blokavimas:",
+// 13.1
+
+// 13.0
+'admin_logs_action_116'		=>	"Pridedamas naujas įskiepis:",
+'admin_logs_action_117'		=>	"Naujo įskiepio redagavimas:",
+'admin_logs_action_115'		=>	"Ištrintas įskiepis, ID:",
+'admin_logs_action_1140'	=>	"Įskiepio išjungimas, ID:",
+'admin_logs_action_1141'	=>	"Įskiepio įjungimas, ID:",
+// 13.0
+
+// 12.1
+'admin_logs_action_109'	=>	"Išvalė reklamos peržiūras, ID:",
+'admin_logs_action_110'	=>	"Išvalė reklamos paspaudimus, ID:",
+'admin_logs_action_111'	=>	"Pridėjo reklaminių medžiagų rubrikoje:",
+'admin_logs_action_112'	=>	"Redagavo reklamos medžiagą rubrikoje:",
+'admin_logs_action_113'	=>	"Antraštės pašalinimas reklaminėse medžiagose, ID:",
+// 12.1
+
+// 12.0
+'admin_logs_action_105'	=>	"Pridėti meta-žymelės nuorodoms:",
+'admin_logs_action_106'	=>	"Redaguoti meta-žymelės nuorodoms:",
+'admin_logs_action_107'	=>	"Ištrinta nuoroda modulyje 'Meta-žymelės'",
+'admin_logs_action_108'	=>	"Eksportuotas vartotojas",
+// 12.0
+
+// 11.3
+'admin_logs_action_102'	=>	"Pridėta nukreipimo nuoroda:",
+'admin_logs_action_103'	=>	"Redaguotos nukreipimo nuorodos:",
+'admin_logs_action_104'	=>	"Pašalinta nuoroda modulyje 'Peradresavimai'",
+// 11.3
+
+// 11.2
+'admin_logs_action_99'	=>	"Neteisingai įvestas PIN kodas po prisijungimo",
+'admin_logs_action_100'	=>	"Prisijungė patvirtinant PIN kodu",
+'admin_logs_action_101'	=>	"Prisijungė svetainėje (įvestas vardas ir slaptažodis).",
+// 11.2
+
+// 10.4
+'admin_logs_action_96'	=>	"Automatinis naujienos pašalinimas pagal nustatytą laikotarpį:",
+'admin_logs_action_97'	=>	"Visų vartotojo komentarų ištrynimas:",
+'admin_logs_action_98'	=>	"Visų vartotojo naujienų ištrynimas:",
+// 10.4
+
+// 10.1
+'admin_logs_action_93'	=>	"Pridėjo naują kryžminę nuorodą raktažodžiui:",
+'admin_logs_action_94'	=>	"Redagavo kryžminę nuorodą raktažodžiui:",
+'admin_logs_action_95'	=>	"Redagavo nustatymus 'Kryžminė nuoroda'",
+// 10.1
+
+// 10.0
+'admin_logs_all'		=>	"Sąrašas visų veiksmų administracijos panelėje.",
+'admin_logs_auth'		=>	"Sąrašas visų nepavykusių prisijungių į administracijos panelę.",
+'admin_logs_action_89'	=>	"Neteisingas slapyvardis/slaptažodis.",
+'admin_logs_action_90'	=>	"Blogai sureguliuoti slapukai naršyklėje.",
+'admin_logs_action_91'	=>	"Neteisingai įvestas slaptažodis.",
+'admin_logs_action_92'	=>	"Blogai sureguliuoti slapukai naršyklėje.",
+// 10.0
+
+// 9.8
+'admin_logs_action_87'	=>	"Pažymėti kaip šiukšlintojai:",
+'admin_logs_action_88'	=>	"Pažymėti kaip šiukšlintojai neregistruoti nariai:",
+// 9.8
+
+// 9.4
+'admin_logs_action_1'	=>	"Pridėjo naujieną:",
+'admin_logs_action_2'	=>	"Pridėjo apklausą:",
+'admin_logs_action_3'	=>	"Redagavo apklausą:",
+'admin_logs_action_4'	=>	"Pridėjo reklamą:",
+'admin_logs_action_5'	=>	"Redaguoja reklamą:",
+'admin_logs_action_6'	=>	"Išjungė reklamą, su ID:",
+'admin_logs_action_7'	=>	"Įterpė reklamą, su ID:",
+'admin_logs_action_8'	=>	"Pašalino reklamą su ID:",
+'admin_logs_action_9'	=>	"Pridėjo užblokuotų vartotojų filtrą:",
+'admin_logs_action_10'	=>	"Pašalino užblokuotų vartotojų filtrą.",
+'admin_logs_action_11'	=>	"Pakeitė kategorijų rūšiavimą.",
+'admin_logs_action_12'	=>	"Pridėjo kategoriją:",
+'admin_logs_action_13'	=>	"Ištrynė kategoriją, ID:",
+'admin_logs_action_14'	=>	"Redagavo kategorijas:",
+'admin_logs_action_15'	=>	"Pašalino naujienas per optimizavimo vedlį:",
+'admin_logs_action_16'	=>	"Pašalino komentarus per optimizavimo vedlį:",
+'admin_logs_action_17'	=>	"Išvalė asmenines žinutes per optimizavimo vedlį.",
+'admin_logs_action_18'	=>	"Išvalė optimizavimo vedlio log failus.",
+'admin_logs_action_19'	=>	"Keitė komentarus.",
+'admin_logs_action_20'	=>	"Ištrynė komentarus naujienose, ID:",
+'admin_logs_action_21'	=>	"Ištrynė visus komentarus.",
+'admin_logs_action_22'	=>	"Ištrynė skundą.",
+'admin_logs_action_23'	=>	"Duomenų bazės tvarkymas / optimizavimas.",
+'admin_logs_action_24'	=>	"Sukūrė atsarginę duomenų bazės kopiją.",
+'admin_logs_action_25'	=>	"Redagavo naujienas:",
+'admin_logs_action_26'	=>	"Ištrynė naujienas:",
+'admin_logs_action_27'	=>	"Pašalino apklausą, ID:",
+'admin_logs_action_28'	=>	"Pašalino balsavimus iš apklausos ID:",
+'admin_logs_action_29'	=>	"Sustabdė apklausą, ID:",
+'admin_logs_action_30'	=>	"Įterpė apklausą, ID:",
+'admin_logs_action_31'	=>	"Redagavo E. pašto šablonus.",
+'admin_logs_action_32'	=>	"Ištrynė įkeltas nuotraukas naujienose, ID:",
+'admin_logs_action_33'	=>	"Ištrynė nuotraukas ir failus statiniame puslapyje, ID:",
+'admin_logs_action_34'	=>	"Ištrynė įkeltus failus naujienoms, ID:",
+'admin_logs_action_36'	=>	"Parsisiuntė failą:",
+'admin_logs_action_37'	=>	"Ištrynė failą",
+'admin_logs_action_38'	=>	"Sukūrė svetainės žemėlapį.",
+'admin_logs_action_39'	=>	"Redagavo statinių puslapių grupę.",
+'admin_logs_action_40'	=>	"Ištrynė statinių puslapių grupę.",
+'admin_logs_action_41'	=>	"Ištrynė vartotoją:",
+'admin_logs_action_42'	=>	"Ištrynė vartotojo komentarus, ID:",
+'admin_logs_action_43'	=>	"Redagavo vartotojų grupę:",
+'admin_logs_action_44'	=>	"Blokavo vartotoją:",
+'admin_logs_action_45'	=>	"Ištrynė asmenines žinutes:",
+'admin_logs_action_46'	=>	"Redagavo naujienų grupę.",
+'admin_logs_action_47'	=>	"Žinutė vartotojams",
+'admin_logs_action_48'	=>	"Pakeitė svetainės nustatymus",
+'admin_logs_action_49'	=>	"Galima publikacijų raida",
+'admin_logs_action_50'	=>	"Pašalino RSS srautą, ID:",
+'admin_logs_action_51'	=>	"Pridėjo RSS srautą:",
+'admin_logs_action_52'	=>	"Redagavo RSS srautą:",
+'admin_logs_action_53'	=>	"Pridėjo RSS srautą:",
+'admin_logs_action_54'	=>	"Redagavo RSS srautą:",
+'admin_logs_action_55'	=>	"Išjungė RSS srautą, ID:",
+'admin_logs_action_56'	=>	"Įjungė RSS srautą, ID:",
+'admin_logs_action_57'	=>	"Pašalino RSS srautą, ID:",
+'admin_logs_action_58'	=>	"Ieškojimas ir pakeitimas duomenų bazėje:",
+'admin_logs_action_59'	=>	"Pridėjo statinį puslapį:",
+'admin_logs_action_60'	=>	"Redagavo statinį puslapį:",
+'admin_logs_action_61'	=>	"Pašalino iš žymelių debesies žymeles:",
+'admin_logs_action_62'	=>	"Redagavo žymelių debesį, žymelės:",
+'admin_logs_action_63'	=>	"Pridėjo vartotoją:",
+'admin_logs_action_64'	=>	"Redagavo vartotojus:",
+'admin_logs_action_65'	=>	"Ištrynė vartotojus:",
+'admin_logs_action_66'	=>	"Pakeitė tinklapio kalbą:",
+'admin_logs_action_67'	=>	"Sukūrė naują šabloną:",
+'admin_logs_action_68'	=>	"Ištrynė šabloną:",
+'admin_logs_action_69'	=>	"Sukūrė šablono failą:",
+'admin_logs_action_70'	=>	"Keitė šablono failą:",
+'admin_logs_action_71'	=>	"Pridėjo ar išimė papildomus laukus vartotojo profilyje:",
+'admin_logs_action_72'	=>	"Pridėjo / Keitė papildomus laukus vartotojo profilyje:",
+'admin_logs_action_73'	=>	"Pašalino papildomus laukus naujienoms:",
+'admin_logs_action_74'	=>	"Pridėjo / redagavo papildomus laukus naujienoms:",
+'admin_logs_action_75'	=>	"Ištrynė vartotojų grupę, ID:",
+'admin_logs_action_76'	=>	"Pridėjo vartotojų grupę:",
+'admin_logs_action_77'	=>	"Keitė vartotojų grupę:",
+'admin_logs_action_78'	=>	"Keitė Video grotuvo nustatymus.",
+'admin_logs_action_79'	=>	"Pridėjo žodžių filtrą:",
+'admin_logs_action_80'	=>	"Pašalino žodžių filtrą.",
+'admin_logs_action_81'	=>	"Keitė žodžių filtrą, žodis:",
+'admin_logs_action_82'	=>	"Prisijungta prie administracijos panelės (įvestas vardas ir slaptažodis).",
+'admin_logs_action_83'	=>	"Redagavo klausimus DUK skiltyje:",
+'admin_logs_action_84'	=>	"Pridėjo klausimus į DUK skiltį:",
+'admin_logs_action_85'	=>	"Pašalino klausimą iš DUK, ID:",
+'admin_logs_action_86'	=>	"Prisijungė į puslapio Administracijos Panelę (prisijungimas pagal slapukus.) Eina per puslapius:",
+// 9.4
+
+));
+
+?>
