@@ -5,6 +5,28 @@ $lang = array (
 'charset'			=>	"utf-8",
 'wysiwyg_language'		=>      "en",
 
+// 14.1
+'news_r_comments'		=>	"Perskaičiuokite komentarus",
+'news_r_comments_1'		=>	"Pabaigtas komentarų perskaičiavimas už pasirinktą įrašą. Publikaciją sudaro <b>{num}</b> komentarai.",
+'news_r_comments_2'		=>	"Komentarų perskaičiavimas pasirinktoms <b>{num}</b> publikacijoms baigtas.",
+'mass_confirm_3'		=>	"publikacijos?",
+'files_prev'			=>	"Atgal",
+'opt_sys_tls'			=>	"Simbolis - kuris skiria naujienas tagų debesyje",
+'opt_sys_tlsd'			=>	"Galite nurodyti skyriklio simbolį, kuris bus panaudotas, kad atskirtumėte žymes sąraše. Pvz nurodant simbolį /, bus tagai atvaizduojami:  Tagas 1 / Tagas 2. HTML žymos yra leidžiamos.",
+'files_max_info_3'		=>	"Leidžiamų įkelti failų skaičius:",
+'disable_index'			=>	"Paieškos sistemų indeksavimas yra draudžiamas",
+'disable_search'		=>	"Uždrausta ieškoti svetainėje",
+'unlock'			=>	"Atrakinkite prieigą prie valdymo skydelio",
+'timeout_title'			=>	"Pranešimas apie neveiklumą svetainėje",
+'timeout_text'			=>	"Jūsų sesija bus automatiškai užblokuota po 10 sekundžių dėl neveiklumo svetainėje",
+'timeout_keep'			=>	"Tęsti darbą",
+'opt_sys_tsess'			=>      "Neaktyvumo skirtasis laikas administratoriaus skydelyje (minutėmis)",
+'opt_sys_tsessd'		=>      "Jei vartotojas nieko nedaro administratoriaus skydelyje nurodytą minučių skaičių, jo paskyra bus automatiškai laikinai užblokuota, kol bus įvestas slaptažodis. Galite nurodyti 0, norėdami pašalinti apribojimus ir prastovos nebus stebimos",
+'password_incorect'		=>	"Neteisingas slaptažodis",
+'del_from_social_2'		=>	"Socialinio tinklo nuoroda sėkmingai pašalinta.",
+'addnews_xf_alert_1'	        =>	"Laukelis <b>{field}</b> turi būtinai būti užpildytas",
+// 14.1
+
 // 14.0
 'opt_sys_ayd'			=>	"Įgalinti Yandex Zen naudojimą",
 'opt_sys_aydd'			=>	"Eksportuodami publikacijas į RSS tiekimą, svetainėje galite įjungti arba išjungti Yandex Zen naudojimą.",
