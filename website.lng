@@ -4,6 +4,18 @@ $lang = array (
 
 'wysiwyg_language'		=>  "lt",
 
+// 14.1
+'pm_err_11'				=>	"Pranešimo išsiųsti negalima, nes gavėjui draudžiama svetainėje naudoti asmeninius pranešimus",
+'reg_err_45'        	                =>      "Šio socialinio tinklo paskyra šiuo metu susieta su kita paskyra <b>{login}</b> svetainėje. Prisijunkite prie svetainės naudodamiesi šia paskyra, atsiekite nuorodą savo profilyje, o tada galėsite ją iš naujo susieti savo profilyje, kad gautumėte naują paskyrą.",
+'reg_err_46'        	                =>      "Jūs nesate prisijungęs prie svetainės, todėl susiejimas yra neįmanomas",
+'reg_err_47'        	                =>      "Socialinis tinklas nebuvo susietas su jūsų paskyra. Norėdami išspręsti šią problemą, susisiekite su savo svetainės administratoriumi.",
+'social_attach_ok'		        =>	"Jūsų paskyra sėkmingai susieta su jūsų {social} paskyra. Jūs galite naudoti ją norėdami prisijungti prie svetainės.",
+'social_attach_ok_1'	                =>	"Jūsų paskyra jau susieta su jūsų {social} paskyra. Jūs galite naudoti ją norėdami prisijungti prie svetainės.",
+'del_from_social'		        =>	"Ar tikrai norite pašalinti šio socialinio tinklo nuorodą iš savo paskyros svetainėje?",
+'del_from_social_1'		        =>	"Pašalinkite šio socialinio tinklo nuorodą iš savo paskyros svetainėje.",
+'addnews_xf_alert_1'	                =>	"Laukelis <b>{field}</b> turi būtinai būti užpildytas",
+// 14.1
+
 // 14.0
 'January'				=>	"Sausis",
 'February'				=>	"Vasaris",
