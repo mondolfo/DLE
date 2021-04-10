@@ -4,6 +4,11 @@ $lang = array (
 
 'wysiwyg_language'		=>  "lt",
 
+// 14.2
+'pm_err_12'				=>	"Norėdami perskaityti šį pranešimą Jums būtina prisijungti prie svetainės naudojant savo asmeninius prisijungimo duomenis",
+'pm_err_13'				=>	"Asmeninius pranešimus svetainėje gali naudoti tik registruoti vartotojai. Jums reikia prisijungti prie svetainės su savo asmeniniais prisijungimo duomenimis arba užsiregistruoti, jei dar nesate registruotas.",
+// 14.2
+
 // 14.1
 'pm_err_11'				=>	"Pranešimo išsiųsti negalima, nes gavėjui draudžiama svetainėje naudoti asmeninius pranešimus",
 'reg_err_45'        	                =>      "Šio socialinio tinklo paskyra šiuo metu susieta su kita paskyra <b>{login}</b> svetainėje. Prisijunkite prie svetainės naudodamiesi šia paskyra, atsiekite nuorodą savo profilyje, o tada galėsite ją iš naujo susieti savo profilyje, kad gautumėte naują paskyrą.",
