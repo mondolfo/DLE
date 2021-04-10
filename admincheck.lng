@@ -2,6 +2,10 @@
 
 $lang = array_merge($lang, array (
 
+// 14.2
+'admin_check_37'	=>	"Jūsų svetainėje įjungta galimybė rodyti visą informaciją apie naujienos autorių iš jo profilio. Ši funkcija pateikia sudėtingas duomenų bazės užklausas, kad gautų informaciją, o tai sukuria didelę apkrovą. Norėdami išjungti šį nustatymą, eikite į <b>Pagrindiniai nustatymai &raquo; Optimizacija</b> ir išjunkite šį nuststymą.",// 14.2
+// 14.2
+
 // 12.1
 'admin_check_36'	=>	"Jūs įjungėte reklamos materialų peržiūrų skaičiavimą. Ši funkcija padidina duomenų dazės apkrovą. Norėdami atjungti šį nustatymą eikite į reklamos skyrelį ir atjunkite norimą funkciją",
 // 12.1
