@@ -5,6 +5,20 @@ $lang = array (
 'charset'			=>	"utf-8",
 'wysiwyg_language'		=>      "en",
 
+// 14.2
+'opt_sys_redusr'		=>	"Redis serverio vartotojo vardas",
+'opt_sys_redusrd'		=>	"Jei įgalinote Redis talpyklą, tai kai kuriems Redis serveriams gali reikėti prisijungimo prie to serverio vartotojo vardo, atsižvelgiant į Redis serverio nustatymus. Šis laukas yra neprivalomas ir jei autorizacijos serveryje nereikia, palikite lauką tuščią.",
+'opt_sys_redpass'		=>	"Redis serverio slaptažodis",
+'opt_sys_redpassd'		=>	"Jei įgalinote Redis talpyklą, kai kuriems Redis serveriams gali reikėti slaptažodžio prisijungti prie šio serverio, atsižvelgiant į Redis serverio nustatymus. Šis laukas yra neprivalomas ir jei autorizacijos serveryje nereikia, palikite lauką tuščią.",
+'stat_m_fail_2'			=>	"<b>Dėmesio:</b><br>Serverio nustatymuose įgalinote Redis talpyklą, tačiau nepavyko prisijungti prie Redis serverio naudojant jūsų nurodytą vartotojo vardą ir slaptažodį. Jūs turite susisiekti su savo Hostingo pagalbos tarnyba ir patikslinti Redis serverio duomenis bei įvesti juos varikliuko nustatymuose.",
+'opt_sys_nref'			=>	"Nustatykite NOREFERRER parametrą išorinėms nuorodoms naujienose",
+'opt_sys_nrefd'			=>	"Jei įgalinote šį nustatymą, visoms išorinėms nuorodoms, kurios yra paskelbtos naujienose, bus nustatytas parametras NOREFERRER, kuris uždraus naršyklėms perduoti informaciją išorinėms svetainėms apie tai, iš kur atėjo vartotojas.",
+'opt_sys_cref'			=>	"Nustatykite NOREFERRER parametrą išorinėms nuorodoms komentaruose",
+'opt_sys_crefd'			=>	"Jei įgalinote šį nustatymą, visoms išorinėms nuorodoms, kurios yra paskelbtos naujienose, bus nustatytas parametras NOREFERRER, kuris uždraus naršyklėms perduoti informaciją išorinėms svetainėms apie tai, iš kur atėjo vartotojas.",
+'opt_sys_usinnews'		=>	"Leisti rodyti visą informaciją apie autorių naujienose",
+'opt_sys_usinnewsd'		=>	"Kai šis nustatymas įgalintas, naujienų rodymo šablonuose galite naudoti bet kokią informaciją apie naujienos autorių, pavyzdžiui, jo pilną vardą ar papildomą laukelį ir t.t. Jei šis nustatymas išjungtas, bus galima rodyti tik naujienos autoriaus prisijungimo vardą ir nuorodą į jo profilį. Ši funkcija naudoja papildomus duomenų bazės resursus ir prisijungimus, todėl ji papildomai apkrauna serverį.",
+// 14.2
+
 // 14.1
 'news_r_comments'		=>	"Perskaičiuokite komentarus",
 'news_r_comments_1'		=>	"Pabaigtas komentarų perskaičiavimas už pasirinktą įrašą. Publikaciją sudaro <b>{num}</b> komentarai.",
