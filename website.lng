@@ -2,7 +2,18 @@
 
 $lang = array (
 
-'wysiwyg_language'		=>  "lt",
+'wysiwyg_language'		=>  "en",
+
+// 15.2
+'news_info_9'			=>	"Galimybė komentuoti pasirinktą naujieną buvo atjungta.",
+// 15.2
+
+// 15.1
+'error_complaint_3'		=>	"Maksimalus nusiskundimo įrašas negali viršyti 2 000 simbolių.",
+'fav_plus_err_1'		=>  "Naujiena jau yra pridėta prie mėgstamų svetainėje.",
+'fav_plus_err_2'		=>  "Naujiena šiuo metu moderuojama ir negali būti pridėta prie mėgstamų.",
+'duplicate_protect'		=>	"Duomenų siuntima jau buvo įvykdytas ankščiau.",
+// 15.1
 
 // 15.0
 'file_not_image'		=>	"Įkėlimui leidžiami failai tik su formatu JPG, PNG, GIF, BMP arba WebP.",
