@@ -4,6 +4,35 @@ $lang = array (
 
 'wysiwyg_language'		=>  "en",
 
+// 15.2
+'opt_sys_recaptsc'		=>	"Score reikšmė naudojant reCAPTCHA v.3:",
+'opt_sys_recaptscd'		=>	"Ši vertė naudojama norint patikrinti tikimybę, kad vartotojas gali būti robotas. Šio lauko reikšmė gali būti nuo 0 iki 1, kur, pavyzdžiui, 0,1 reiškia, kad greičiausiai tai yra robotas, o 0,9 - asmuo. Galite nurodyti reikšmę, kurią pasiekus kaip didesnę, vartotojas bus atpažintas kaip asmuo. Rekomenduojama vertė: 0,5",
+'indexnow_error_202'	=>	"Naujas raktas laukia patvirtinimo. Jei esate tikri, kad tai teisinga, šiek tiek palaukite ir pateikite kelis kitus adresus.",
+'indexnow_error_400'	=>	"Užklausos turinyje perduoti neteisingi parametrai.",
+'indexnow_error_403'	=>	"Rakto nepavyko įkelti arba jis neatitinka užklausoje nurodytų adresų.",
+'indexnow_error_422'	=>	"Neteisingas raktas. Buvo nurodyta neteisinga rakto vieta arba rakto faile nėra paties rakto, kuris nurodytas varikliuko nustatymuose",
+'indexnow_error_429'	=>	"Jau anksčiau buvo išsiųsta per daug pranešimų paieškos sistemoms.",
+'opt_sys_turl'			=>	"Įgalinti URL transliteraciją:",
+'opt_sys_turld'			=>	"Kai ši parinktis įjungta, simboliai bus transliteruojami į lotynų kalbą generuojant SEO URL. Pavyzdžiui, kai ši parinktis įjungta, publikacijos URL atrodys taip: http://tavosvetaine.lt/id-imja-novosti.html, o išjungus – taip: http://tavosvetaine.lt/id-имя-новости.html",
+'mass_add_cloud'		=>	"Pridėkite žodžius tagų debesiui",
+'plugins_not_found_2'	=>  "Nerasta jokių papildinių pagal jūsų paieškos užklausą",
+'opt_sys_imshr'			=>	"Naudokite išorinę atmintį bendrinamų vaizdų aplankui",
+'opt_sys_imshrd'		=>	"Kai šis nustatymas įjungtas, bendrinamas vaizdų aplankas bus naudojamas iš išorinės saugyklos. O atjungus bus naudojama ta, kuri yra vietinėje saugykloje.",
+'files_max_info_4'		=>	"Įkelta vaizdų: <b>{uploaded}</b> iš <b>{count}</b> maksimaliai leidžiamų. Jūs galite įkelti dar <b>{allowed}</b> failus",
+'files_max_info_5'		=>	"Įkelta failų: <b>{uploaded}</b> iš <b>{count}</b> maksimaliai leidžiamų. Jūs galite įkelti dar <b>{allowed}</b> failus",
+'google_save'			=>	"Išsaugoti nustatytas reikšmes",
+'google_changefreq'		=>	"Pakeitimai:",
+'sitemap_changefreq_1'	=>	"Visada",
+'sitemap_changefreq_2'	=>	"Kas valandą",
+'sitemap_changefreq_3'	=>	"Kasdien",
+'sitemap_changefreq_4'	=>	"Kas savaitę",
+'sitemap_changefreq_5'	=>	"Kas mėnesį",
+'sitemap_changefreq_6'	=>	"Kasmet",
+'sitemap_changefreq_7'	=>	"Niekada",
+'google_nnumpf'			=>	"Nuorodų skaičius viename faile:",
+'hint_g_nnumpf'			=>	"Galite nurodyti, kiek nuorodų įdėti į vieną žemėlapio failą. Jei jūsų svetainėje yra daugiau nuorodų, žemėlapis bus padalintas į kelis failus. Viename faile negali būti daugiau nei 40 000 nuorodų",
+'google_map_info_2'		=>	"Buvo sukurtas „Google“ naujienų indekso failas, kurį galima rasti adresu:",
+// 15.2
 
 // 15.1
 'opt_sys_imfs_6'		=>	"Bet kokia su S3 suderinama saugykla",
