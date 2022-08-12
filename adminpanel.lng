@@ -2,8 +2,51 @@
 
 $lang = array (  
 
-'charset'				=>	"utf-8",
 'wysiwyg_language'		=>  "en",
+
+
+// 15.1
+'opt_sys_imfs_6'		=>	"Bet kokia su S3 suderinama saugykla",
+'opt_sys_imfend'		=>	"Nurodykite įėjimo taško URL adresą, skirtą prisijungti prie išorinės saugyklos (EndPoint). Pavyzdžiui, https://s3.website.com",
+'up_im_expand'			=>	"Padidinti",
+'up_im_copy'			=>	"Nukopijuoti nuorodą",
+'up_im_copy1'			=>	"Nukopijuota į mainų sritį",
+'opt_sys_pfile'			=>	"Leisti įkelti viešuosius failus į serverį",
+'opt_sys_pfiled'		=>	"Bus leidžiama atsisiųsti viešus failus, kuriuos vartotojai gali atsisiųsti tiesiai iš serverio, apeinant DataLife Engine varikliuką ir bet kokius apribojimus.",
+'public_file_upl'		=>	"Atsisiunčiamas viešas failas",
+'show_all_action'		=>	"Rodyti veiksmus",
+'hide_all_action'		=>	"Slėpti veiksmus",
+'duplicate_protect'		=>	"Duomenų siuntimas jau sėkmingai baigtas.",
+'xfield_xpublic'		=>	"Įkelti failą kaip viešą",
+'xfield_xhelppub'		=>	"Jei šis nustatymas įjungtas, atsisiųstas failas bus viešas ir pasiekiamas naudojant tiesioginio atsisiuntimo nuorodą; jei šis nustatymas išjungtas, failą bus galima atsisiųsti tik naudojant priedo žymą attachment",
+'xfield_xinnews'		=>	"Leisti įterpti šio lauko išvesties žymą į naujienų tekstą",
+'xfield_xhelpnws'		=>	"Kai šis nustatymas įjungtas, galite įterpti šio lauko rodymo žymą [xfvalue_X] į trumpo ir ilgo aprašo tekstą, pavyzdžiui, publikacijų tekstuose rodyti galerijas ir vaizdus. Kai ši parinktis išjungta, tai papildomas laukas gali būti rodomas tik šablone ",
+'xfield_xi11'			=>	"Naudokite vaizdą „Open Graph“ žymėjime",
+'opt_sys_sorg'			=>  "Struktūriniai duomenys schema.org JSON-LD",
+'opt_sys_sorgd'			=>  "Galite pasirinkti, kokio tipo duomenims priklauso jūsų leidiniai, o struktūriniai duomenys pagal schema.org standartą bus automatiškai įtraukti į jūsų svetainės leidinio puslapių kodą, kad jūsų svetainė būtų geriau ir teisingiau indeksuojama.",
+'opt_sys_sorgl'			=>  "Nuoroda į savo svetainės piktogramą",
+'opt_sys_sorgld'		=>  "Nurodykite nuorodą į savo svetainės piktogramą, kuri bus naudojama struktūriniams duomenims",
+'opt_sys_sorgt'			=>  "Jūsų svetainės pristatymas",
+'opt_sys_sorgtd'		=>  "Pasirinkite savo svetainės tipą. Galite pasirinkti, ar svetainė yra tik asmeninė svetainė, ar jai atstovauja organizacija",
+'opt_sys_sorgn'			=>  "Jūsų vardas arba organizacijos pavadinimas",
+'opt_sys_sorgnd'		=>  "Įveskite savo vardą arba organizacijos pavadinimą",
+'opt_sys_sorg_1'		=>  "Atjungta",
+'opt_sys_sorg_2'		=>  "Straipsniai",
+'opt_sys_sorg_3'		=>  "Naujienos",
+'opt_sys_sorg_4'		=>  "Blogai",
+'opt_sys_sorg_5'		=>  "Knygos",
+'opt_sys_sorg_6'		=>  "Filmai",
+'opt_sys_sorg_7'		=>  "Receptai",
+'opt_sys_sorg_8'		=>  "Produktai",
+'opt_sys_sorg_9'		=>  "Programinė įranga",
+'opt_sys_sorg_10'		=>  "Asmeninis puslapis",
+'opt_sys_sorg_11'		=>  "Organizacija",
+'opt_sys_indn'			=>	"IndexNow protokolo palaikymas ",
+'opt_sys_indnd'			=>	"Įjungus šį nustatymą, paieškos sistemoms bus automatiškai nedelsiant pranešama apie leidinių pasikeitimus, pavyzdžiui, pridedant ar redaguojant leidinį, kad šie puslapiai būtų iš naujo indeksuojami paieškos sistemų. Kad ši funkcija veiktų, ją įjungus, turite įdėti failą pavadinimu <b>{name}</b> į serverį savo svetainės šaknyje, šio failo viduje turi būti įrašytas turinys: <b>{text}</b> ",
+'indexnow_error_1'		=>	"Įjungėte IndexNow protokolo palaikymą, kad praneštumėte paieškos sistemoms. Tačiau nesukūrėte <b>{name}.txt</b> failo savo svetainės šaknyje. Paieškos sistemoms nebuvo pranešta apie jūsų svetainės turinio pasikeitimą. ",
+'indexnow_error_2'		=>	"Įjungėte IndexNow protokolo palaikymą, kad praneštumėte paieškos sistemoms. Tačiau jūsų rakto faile <b>{name}.txt</b> nėra paties rakto <b>{name}</b> Pridėkite šią reikšmę prie failo. Paieškos sistemoms nebuvo pranešta apie jūsų svetainės turinio pasikeitimą.",
+'indexnow_error_3'		=>	"Įjungėte IndexNow protokolo palaikymą, kad praneštumėte paieškos sistemoms. Tačiau paieškos variklis {searchengine} pateikė klaidą su kodu: {errorcode}",
+// 15.1
 
 // 15.0
 'news_pmnew'		=>	"Siųsti asmeninį pranešimą",
